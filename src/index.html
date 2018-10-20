@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Estrella Insurance App</title>
+  <title>Responsive Insurance App</title>
 
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -22,13 +22,13 @@
   <link rel="apple-touch-icon" href="assets/img/appicon.png">
 
   <script>
-    
-    // if ('serviceWorker' in navigator) {
-    //   navigator.serviceWorker.register('service-worker.js')
-    //     .then(() => console.log('service worker installed'))
-    //     .catch(err => console.log('Error', err));
-    // }
-     
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+
   </script>
 </head>
 
@@ -38,7 +38,7 @@
 
   <!-- Replace the API key with your own, see:
     https://developers.google.com/maps/documentation/javascript/get-api-key -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pf6ZdFQj5qw7rc_HSGrhUwQKfIe9ICw"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4ku3ne0fTdv8ow9A2NfvQPOMuaMqnWH4"></script>
 
 </body>
 

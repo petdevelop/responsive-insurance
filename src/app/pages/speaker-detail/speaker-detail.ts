@@ -21,8 +21,8 @@ export class SpeakerDetailPage {
   ionViewWillEnter() {
     this.dataProvider.load().subscribe((data: any) => {
       const speakerId = this.route.snapshot.paramMap.get('speakerId');
-      if (data && data.offices) {
-        for (const speaker of data.offices) {
+      if (data && data.speakers) {
+        for (const speaker of data.speakers) {
           if (speaker && speaker.id === speakerId) {
             this.speaker = speaker;
             break;

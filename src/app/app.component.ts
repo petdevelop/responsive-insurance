@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { Events, MenuController, Platform } from '@ionic/angular';
+import { Events, MenuController } from '@ionic/angular';
 
 import { UserData } from './providers/user-data';
 
@@ -38,9 +36,6 @@ export class AppComponent implements OnInit {
     private menu: MenuController,
     private router: Router,
     private userData: UserData,
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
   ) {
     this.initializeApp();
   }
@@ -51,10 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+
   }
 
   checkLoginStatus() {

@@ -1,4 +1,4 @@
-# Contributing to the Estrella Insurance Application
+# Contributing to the Responsive Insurance Application
 
 Thank you for taking the time to contribute! :tada::+1:
 
